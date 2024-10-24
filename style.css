@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.carGame {
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background: url("./images/bg_image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.startScreen {
+    width: 50vw;
+    position: absolute;
+    background-color: rgb(70, 209, 70);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    z-index: 1;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bolder;
+    
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    letter-spacing: 5;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.score {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    background-color: rgb(15, 164, 223);
+    text-align: center;
+    color: white;
+    height: 70px;
+    width: 300px;
+    font-size: 1.5rem;
+    box-shadow: 0px 3px 5px #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resetScreen{
+    width:600px ;
+    height:120px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+    
+    
+}
+.resetScreen h2{
+    color: yellow;
+    text-align: center;
+    padding-top: 1rem;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    color: white;
+    
+}
+.resetScreen button{
+    background-color: indigo;
+    font-weight: 800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+   
+    
+
+}
+.car{
+    width: 80px;
+    height: 100px;
+    
+}
+.enemyCar{
+    width: 90px;
+    height: 100px;
+    
+}
+.car,
+.enemyCar {
+    background-image: url("./images/car4.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+}
+
+.gameArea {
+    width: 500px;
+    height: 100vh;
+    margin: auto;
+    background-color: #2d3436;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+
+.line {
+    width: 12px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    left: calc(50% - 12px);
+}
+

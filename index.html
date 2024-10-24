@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title > Car Game</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="carGame">
+        <div class="score"></div>
+        <div class="startScreen">
+            <p> Click here to start<br />
+                Use arrow keys to move<br />
+                if you hit another car you will loss
+            </p>
+            <button onclick="startGame()" class="btn">OK</button>
+        </div>
+        <div class="resetScreen" style="display: none;">
+            <h2>GAME OVER</h2>
+           <div class="heading"><h3>Click Here to Reset the Game </h3></div>
+            <Button onclick="resetGame()">Reset</Button>
+        </div>
+        <div class="gameArea"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
